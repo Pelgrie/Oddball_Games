@@ -1,0 +1,122 @@
+<!Doctype html>
+
+<html lang="en">
+
+	<head>
+		<title>IMM 120 Final Project: Newsletter</title>
+		
+		<meta charset="utf-8">
+		
+		<link rel="stylesheet" href="finalproject.css">
+		
+		<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+		
+	</head>
+	
+	<body id="support">
+	<a href = "index.html"><img src="images/OddballGamesWebsiteLogo.png" alt="Oddball Games's Logo" width=100%></a>
+	
+	<nav>
+		<ul>
+			<li><a href = "index.html"><img src="images/greenbutton_games.png" alt="Games"></a></li>
+			<li><a href = "aboutUs.html"><img src="images/greenbutton_aboutus.png" alt="About Us"></a></li>
+			<li><a href = "newsletter.html"><img src="images/greenbutton_newsletter.png" alt="Newsletter"></a></li>
+		</ul>
+	</nav>
+	
+	<main>
+	<h2>Sign up for the digital newsletter, and stay informed about all of our newest games!</h2>
+	<p>All fields marked with an asterisk(*) are required.</p>
+	<form method="post" action="mailto:abrody@mail.dccc.edu">
+		<label for="Email">*Please enter your e-mail: </label><br>
+		<input type="email" id="Email" name="Email" required="required"><br>
+		<br>
+		<label for="Birthdate">*Please enter your birthdate (blank entries will default to no news for games above the teen rating): </label><br>
+		<input type="date" id="Birthdate" name="Birthdate"><br>
+		<br>
+		<label>Please select which division you would like to receive more information about:</label><br>
+		<label>(Selecting none will default to all applicable divisions)</label><br>
+		<input type="checkbox" name="Pigpen" id="Pigpen" value="Pigpen">
+		<label for="Pigpen">PigPen Division</label><br>
+		<input type="checkbox" name="Pigeon" id="Pigeon" value="Pigeon">
+		<label for="Pigeon">Pigeon Division</label><br>
+		<input type="checkbox" name="RedPanda" id="RedPanda" value="RedPanda">
+		<label for="RedPanda">Red Panda Division</label><br>
+		<input type="checkbox" name="Canary" id="Canary" value="Canary">
+		<label for="Canary">Canary Division</label><br>
+		<input type="checkbox" name="BlackBird" id="BlackBird" value="BlackBird">
+		<label for="BlackBird">Black Bird Division</label><br>
+		<br>
+		<input type="submit" value="Submit"><br>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	</main>
+	
+	<hr>
+	
+	<div>
+	<p>Looking to buy one of our wonderful and fun games?  You can find them at these storefronts:</p>
+	<ul>
+	<li><a href = "https://store.steampowered.com/" target="_blank">Steam</a></li>
+	<li><a href = "https://www.gog.com/en/" target="_blank">Gog</a></li>
+	<li><a href = "https://play.google.com/store/apps?hl=en_US&pli=1" target="_blank">Google Play Store</a></li>
+	<li><a href = "https://www.apple.com/app-store/" target="_blank">Apple App Store</a></li>
+	<li><a href = "https://www.amazon.com/gp/browse.html?node=2350149011&ref_=nav_em__adr_app_0_2_11_2" target="_blank">Amazon</a></li>
+	<li><a href = "https://store.epicgames.com/en-US" target="_blank">Epic Games Store</a></li>
+	</ul>
+	</div>
+	<br>
+	<br>
+	<hr>
+	<footer>
+		<ul>
+			<li><img id="0" src="images/randomImages/smiley_black.png" alt="Random images changed by JavaScript"></li>
+			<li><img id="1" src="images/randomImages/smiley_blue.png" alt="Random images changed by JavaScript"></li>
+			<li><img id="2" src="images/randomImages/smiley_cyan.png" alt="Random images changed by JavaScript"></li>
+			<li><img id="3" src="images/randomImages/smiley_green.png" alt="Random images changed by JavaScript"></li>
+			<li><img id="4" src="images/randomImages/smiley_lime.png" alt="Random images changed by JavaScript"></li>
+			<li><img id="5" src="images/randomImages/smiley_magenta.png" alt="Random images changed by JavaScript"></li>
+			<li><img id="6" src="images/randomImages/smiley_orange.png" alt="Random images changed by JavaScript"></li>
+			<li><img id="7" src="images/randomImages/smiley_red.png" alt="Random images changed by JavaScript"></li>
+			<li><img id="8" src="images/randomImages/smiley_yellow.png" alt="Random images changed by JavaScript"></li>
+		</ul>
+		
+		<script>
+			function smiley(){
+				var source = "";
+				
+				for(var i = 0; i < 9; i++){
+					var change = document.getElementById(i);
+					
+					if (change.src.match("images/randomImages/smiley_blue.png")){
+						source = "images/randomImages/smiley_black.png";
+					} else if (change.src.match("images/randomImages/smiley_cyan.png")){
+						source = "images/randomImages/smiley_blue.png";
+					} else if (change.src.match("images/randomImages/smiley_green.png")){
+						source = "images/randomImages/smiley_cyan.png";
+					} else if (change.src.match("images/randomImages/smiley_lime.png")){
+						source = "images/randomImages/smiley_green.png";
+					} else if (change.src.match("images/randomImages/smiley_magenta.png")){
+						source = "images/randomImages/smiley_lime.png";
+					} else if (change.src.match("images/randomImages/smiley_orange.png")){
+						source = "images/randomImages/smiley_magenta.png";
+					} else if (change.src.match("images/randomImages/smiley_red.png")){
+						source = "images/randomImages/smiley_orange.png";
+					} else if (change.src.match("images/randomImages/smiley_yellow.png")){
+						source = "images/randomImages/smiley_red.png";
+					} else if (change.src.match("images/randomImages/smiley_black.png")){
+						source = "images/randomImages/smiley_yellow.png";
+					}
+					
+					change.src = source;
+				}
+			}
+			setInterval(smiley, 500);
+		</script>
+	</footer>
+	</body>
+</html>

@@ -1,0 +1,114 @@
+<!Doctype html>
+
+<html lang="en">
+
+	<head>
+		<title>IMM 120 Final Project: Home</title>
+		
+		<meta charset="utf-8">
+		
+		<link rel="stylesheet" href="finalproject.css">
+		
+		<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+		
+	</head>
+	
+	<body id ="primary">
+	<a href = "index.html"><img src="images/OddballGamesWebsiteLogo.png" alt="Oddball Games's Logo" width = 100%></a>
+	<nav>
+		<ul>
+			<li><a href = "index.html"><img src="images/bluebutton_games.png" alt="Games"></a></li>
+			<li><a href = "aboutUs.html"><img src="images/bluebutton_aboutus.png" alt="About Us"></a></li>
+			<li><a href = "newsletter.html"><img src="images/bluebutton_newsletter.png" alt="Newsletter"></a></li>
+		</ul>
+	</nav>
+	<main id = "gallery">
+		<h2 class = "title">Check out our fun games!</h2>
+		
+		<section class = "secA">
+			<a href="https://studio.code.org/projects/applab/eJHK0-q8CLratY0TJgiKfXjoBnbdGRp-Cd_usA0xXEQ" target="_blank"><img src = "images/CodeArcadeAdvertisement.gif" alt ="Code Arcade GIF." width = 272px></a>
+			<h3>Code Arcade</h3>
+			<p>Play a series of smaller mini-games all wrapped up into one nice and condensed package.<br>
+			<a href="https://studio.code.org/projects/applab/eJHK0-q8CLratY0TJgiKfXjoBnbdGRp-Cd_usA0xXEQ" target="_blank">Play it now!</a></p>
+		</section>
+		
+		<section class = "secB">
+			<img src = "images/CastleOfKayPeaAdvertisement.gif" alt = "Castle of Kay Pea GIF." width = 272px>
+			<h3>The Castle of Kay Pea</h3>
+			<p>Explore a magical castle full of treasure and danger in a classic text-based adventure.  Try to escape with as much loot as possible!<br>
+			<b>Coming Soon!</b></p>
+		</section>
+		
+		<section class = "secC">
+			<img src = "images/InDevelopment.png" alt="Untitled Game currently in development PNG." width = 272px>
+			<h3>Game Currently In Development</h3>
+			<p>More info coming soon!<br></p>
+		</section>
+		
+	</main>
+	
+	<hr>
+	
+	<div>
+		<p>Looking to buy one of our wonderful and fun games?  You can find them at these storefronts:</p>
+		<ul>
+			<li><a href = "https://store.steampowered.com/" target="_blank">Steam</a></li>
+			<li><a href = "https://www.gog.com/en/" target="_blank">Gog</a></li>
+			<li><a href = "https://play.google.com/store/apps?hl=en_US&pli=1" target="_blank">Google Play Store</a></li>
+			<li><a href = "https://www.apple.com/app-store/" target="_blank">Apple App Store</a></li>
+			<li><a href = "https://www.amazon.com/gp/browse.html?node=2350149011&ref_=nav_em__adr_app_0_2_11_2" target="_blank">Amazon</a></li>
+			<li><a href = "https://store.epicgames.com/en-US" target="_blank">Epic Games Store</a></li>
+		</ul>
+	</div>
+	
+	<br>
+	<br>
+	<hr>
+	<footer>
+		<ul>
+			<li><img id="0" src="images/randomImages/smiley_black.png" alt="Cycling images changed by JavaScript"></li>
+			<li><img id="1" src="images/randomImages/smiley_blue.png" alt="Cycling images changed by JavaScript"></li>
+			<li><img id="2" src="images/randomImages/smiley_cyan.png" alt="Cycling images changed by JavaScript"></li>
+			<li><img id="3" src="images/randomImages/smiley_green.png" alt="Cycling images changed by JavaScript"></li>
+			<li><img id="4" src="images/randomImages/smiley_lime.png" alt="Cycling images changed by JavaScript"></li>
+			<li><img id="5" src="images/randomImages/smiley_magenta.png" alt="Cycling images changed by JavaScript"></li>
+			<li><img id="6" src="images/randomImages/smiley_orange.png" alt="Cycling images changed by JavaScript"></li>
+			<li><img id="7" src="images/randomImages/smiley_red.png" alt="Cycling images changed by JavaScript"></li>
+			<li><img id="8" src="images/randomImages/smiley_yellow.png" alt="Cycling images changed by JavaScript"></li>
+		</ul>
+		
+		<script>
+			function smiley(){
+				var source = "";
+				
+				for(var i = 0; i < 9; i++){
+					var change = document.getElementById(i);
+					
+					if (change.src.match("images/randomImages/smiley_blue.png")){
+						source = "images/randomImages/smiley_black.png";
+					} else if (change.src.match("images/randomImages/smiley_cyan.png")){
+						source = "images/randomImages/smiley_blue.png";
+					} else if (change.src.match("images/randomImages/smiley_green.png")){
+						source = "images/randomImages/smiley_cyan.png";
+					} else if (change.src.match("images/randomImages/smiley_lime.png")){
+						source = "images/randomImages/smiley_green.png";
+					} else if (change.src.match("images/randomImages/smiley_magenta.png")){
+						source = "images/randomImages/smiley_lime.png";
+					} else if (change.src.match("images/randomImages/smiley_orange.png")){
+						source = "images/randomImages/smiley_magenta.png";
+					} else if (change.src.match("images/randomImages/smiley_red.png")){
+						source = "images/randomImages/smiley_orange.png";
+					} else if (change.src.match("images/randomImages/smiley_yellow.png")){
+						source = "images/randomImages/smiley_red.png";
+					} else if (change.src.match("images/randomImages/smiley_black.png")){
+						source = "images/randomImages/smiley_yellow.png";
+					}
+					
+					change.src = source;
+				}
+			}
+			setInterval(smiley, 500);
+		</script>
+	</footer>
+	</body>
+</html>

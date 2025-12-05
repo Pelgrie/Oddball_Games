@@ -1,0 +1,124 @@
+body{background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial, Calibri, san-serif;}
+	
+nav{margin-left:20%;
+	margin-right:20%;}
+		
+ul {list-style-type: none;}
+
+footer ul{display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;}
+
+#primary {background-color: #FFFFEB;
+			background-image: url(images/blueborder.png);
+			color: #000088;
+}
+
+#secondary {background-color: #EBFFFF;
+			background-image: url(images/redborder.png);
+			color: #880000;
+		main {text-align: center;}
+		p {text-align: center;}
+		div{text-align: center;}
+		div p{text-align: center;}
+}
+
+#support {background-color: #FFEBFF;
+			background-image: url(images/greenborder.png);
+			color: #008800;
+		main {text-align: left;}	
+		p{text-align: left;}
+		div{text-align: center;}
+		div p{text-align: center;}
+}
+
+@media (min-width:600px){
+	nav ul{display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-around;}
+	
+	#primary{
+		main {text-align: center;}
+		p {text-align: center;}
+		div{text-align: center;}
+	}
+	
+	#secondary{
+		main {text-align: center;}
+		p {text-align: center;}
+		div{text-align: center;}
+		div p{text-align: center;}
+		th{font-size: 2em;}
+	}
+	
+	#support{
+		main {text-align: left;}	
+		p{text-align: left;}
+		div{text-align: center;}
+		div p{text-align: center;}
+	}
+}
+
+@media (min-width:1024px){
+	nav ul{display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-around;}
+			
+	#primary{
+		main {text-align: center;}
+		p {text-align: center;}
+		div{text-align: center;}
+		div p{text-align: center;}
+	}
+			
+	#secondary{
+		main {text-align: center;}
+		p {text-align: center;}
+		div{text-align: center;}
+		div p{text-align: center;}
+	}
+	
+	#support{
+		main {text-align: left;}	
+		p{text-align: left;}
+		div{text-align: center;}
+		div p{text-align: center;}
+	}
+	
+	.title{grid-area: title;
+			text-align: center;}
+
+	.secA{padding-left:100px;
+			padding-right: 100px;
+			grid-area: secA;
+			p{text-align: center;}
+			
+		}
+	
+	.secB{padding-left:100px;
+			padding-right: 100px;
+			grid-area: secB;
+			p{text-align: center;}
+		}
+	.secC{padding-left:100px;
+			padding-right: 100px;
+			grid-area: secC;
+			p{text-align: center;}
+		}
+	
+	#gallery{ 
+				display: grid;
+				grid-template:
+				"title title"
+				"secA  secB"
+				"secC  secC"
+			}
